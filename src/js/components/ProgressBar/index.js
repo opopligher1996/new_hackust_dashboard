@@ -7,7 +7,7 @@ const ProgressBar = props => {
     <Progress
       strokeWidth={14}
       strokeLinecap="square"
-      strokeColor="#f5a623"
+      strokeColor="#c7141f"
       percent={percent}
       showInfo={showInfo}
     />
