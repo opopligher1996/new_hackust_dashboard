@@ -78,7 +78,7 @@ class User extends Component {
     )
   }
 
-  setGender(event) {
+  districtChange(event) {
     console.log(event.target.value);
   }
   render() {
@@ -108,12 +108,22 @@ class User extends Component {
                 <h1>User Order</h1>
               </div>
             </Row>
-            <Row className="header">
+            <Row>
               <div className="lineup">
-                <div onChange={this.setGender.bind(this)}>
-                  <input type="radio" value="Easter" name="district"/> Easter
+                <h2>District</h2>
+                <div onChange={this.districtChange.bind(this)}>
+                  <Col md={2}>
+                  <input type="radio" value="Easter" name="district" defaultChecked/> Easter
+                  </Col>
+                  <Col md={2}>
                   <input type="radio" value="Southern" name="district"/> Southern
+                  </Col>
+                  <Col md={2}>
                   <input type="radio" value="North" name="district"/> North
+                  </Col>
+                  <Col md={2}>
+                  <input type="radio" value="Easter" name="district"/> Sai Kung
+                  </Col>
                 </div>
               </div>
             </Row>
