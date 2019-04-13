@@ -1,0 +1,23 @@
+.boxsize{
+  border-radius: 5px 5px 5px 5px;
+  padding-left: 10px;
+  height: 100px;
+  color: #252525;
+}
+
+.food{
+  display: inline-block;
+  width: 440px;
+  height: 100px;
+}
+
+.time{
+  text-align: center;
+  .Row{
+    height: 50%;
+  }
+}
+
+.company{
+  text-align: center;
+}
