@@ -87,13 +87,47 @@ class Home extends Component {
       {lat:22.299283, lng:114.174883},
       {lat:22.299572, lng:114.175921},
       {lat:22.303045, lng:114.177132},
-      {lat:22.302254, lng:114.178904}
+      {lat:22.302254, lng:114.178904},
+      {lat:22.301758, lng:114.179460},
+      {lat:22.301069, lng:114.178864}
     ]
     return (
       <Polyline
         path={pathCoordinates}
         options={{
         strokeColor:"#0000FF",
+        strokeOpacity: 0.8,
+        strokeWeight: 5,
+        icons: [{
+          icon: "hello",
+          offset: '0',
+          repeat: '10px'
+        }],
+      }}
+      />
+   )
+  }
+
+  renderUserPosition_2 = () => {
+    var pathCoordinates=[
+      {lat:22.301069, lng:114.178864},
+      {lat:22.300028, lng:114.179841},
+      {lat:22.298063, lng:114.177536},
+      {lat:22.297135, lng:114.176257},
+      {lat:22.297239, lng:114.175536},
+      {lat:22.295354, lng:114.175160},
+      {lat:22.294775, lng:114.172356},
+      {lat:22.295538, lng:114.172281},
+      {lat:22.295520, lng:114.171236},
+      {lat:22.296402, lng:114.171248},
+      {lat:22.296472, lng:114.172280},
+      {lat:22.298269 , lng: 114.172196}
+    ]
+    return (
+      <Polyline
+        path={pathCoordinates}
+        options={{
+        strokeColor:"#c7141f",
         strokeOpacity: 0.8,
         strokeWeight: 5,
         icons: [{
@@ -160,6 +194,7 @@ class Home extends Component {
                         }}
                       >
                         { this.renderUserPosition() }
+                        { this.renderUserPosition_2() }
                         <Marker
                           className="icon"
                           key={'minibus-1'}
