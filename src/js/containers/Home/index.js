@@ -33,7 +33,8 @@ class Home extends Component {
           eta: 15,
           place: 'UST',
           time: '7:00',
-          percent: 90
+          percent: 90,
+          color: "#0000FF"
         },
         {
           order_id: '0190304',
@@ -42,16 +43,28 @@ class Home extends Component {
           eta: 15,
           place: 'Tin Shui Wai',
           time: '7:00',
-          percent: 95
+          percent: 95,
+          color: "#0000FF"
         },
         {
           order_id: '0190304',
-          company_name: 'pizza_hut',
+          company_name: 'phd',
           capacity: 90,
           eta: 15,
           place: 'Tin Shui Wai',
           time: '7:00',
-          percent: 85
+          percent: 85,
+          color: "#0000FF"
+        },
+        {
+          order_id: '0190304',
+          company_name: 'kfc',
+          capacity: 90,
+          eta: 15,
+          place: 'Tin Shui Wai',
+          time: '7:30',
+          percent: 75,
+          color: "#c7141f"
         },
         {
           order_id: '0190304',
@@ -60,16 +73,8 @@ class Home extends Component {
           eta: 15,
           place: 'Tin Shui Wai',
           time: '7:30',
-          percent: 75
-        },
-        {
-          order_id: '0190304',
-          company_name: 'pizza_hut',
-          capacity: 90,
-          eta: 15,
-          place: 'Tin Shui Wai',
-          time: '7:30',
-          percent: 80
+          percent: 80,
+          color: "#c7141f"
         }
       ]
     }
@@ -156,6 +161,7 @@ class Home extends Component {
         company_name={order.company_name}
         place={order.place}
         time={order.time}
+        color={order.color}
       />
     )
   }
@@ -202,8 +208,14 @@ class Home extends Component {
                         <Marker
                           className="icon"
                           key={'minibus-1'}
-                          icon={{url: require('./photos/car.png')}}
+                          icon={{url: require('./photos/pizza_hut.png')}}
                           position={{lat: 22.298269 , lng: 114.172196}}
+                        />
+                        <Marker
+                          className="icon"
+                          key={'minibus-1'}
+                          icon={{url: require('./photos/car.png')}}
+                          position={{lat: 22.298962 , lng: 114.173662}}
                         />
                       </Map>
                     </div>
@@ -213,6 +225,8 @@ class Home extends Component {
                   <div className="rigth-div">
                     <div className="rigth-inner-div">
                       <div className="order-status-div">
+                        <h4>Store: Tsim Sha Tsui</h4>
+                        <h4>Dirver No.: 012</h4>
                         <h4>Order Status</h4>
                       </div>
                       {this.renderOrderRecords()}
