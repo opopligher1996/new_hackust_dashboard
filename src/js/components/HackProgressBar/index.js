@@ -4,7 +4,7 @@ import { Avatar , Col, Row} from 'antd';
 import './styles.scss';
 
 const HackProgressBar = props => {
-  const { showInfo = false, percent, order_id, company_name, place, time} = props;
+  const { showInfo = false, percent, order_id, company_name, place, time, color} = props;
   return (
     <div className="record">
       <Row>
@@ -21,7 +21,7 @@ const HackProgressBar = props => {
           <Progress
             strokeWidth={14}
             strokeLinecap="square"
-            strokeColor="#c7141f"
+            strokeColor={color}
             percent={percent}
             showInfo={showInfo}
           />

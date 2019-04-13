@@ -63,8 +63,7 @@ class User extends Component {
 
       ]
     }
-  }
-
+  }  
   renderOrderRecords = () => {
     const {orders} = this.state
     return orders.map((order, index) =>
