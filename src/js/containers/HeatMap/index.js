@@ -60,6 +60,7 @@ class HeatMap extends Component {
         {lat: 22.305929, lng: 114.166998},
         {lat: 22.303140, lng: 114.167994}
       ]
+
     }
   }
 

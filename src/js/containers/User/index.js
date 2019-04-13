@@ -21,7 +21,7 @@ class User extends Component {
     this.state = {
       orders : [
         {
-          id: '1234567',
+          id: '0043851',
           food: 'Seafood Rice Doria',
           qty:'x4',
           time: '11:00',
@@ -29,7 +29,7 @@ class User extends Component {
           progressbar: '20',
         },
         {
-          id: '7654321',
+          id: '0043852',
           food: 'Popcorn Crispy Chicken',
           qty:'x3',
           time: '12:00',
@@ -37,7 +37,7 @@ class User extends Component {
           progressbar: '88',
         },
         {
-          id: '1234568',
+          id: '0043853',
           food: 'Seafood Supreme',
           qty:'x5',
           time: '14:00',
@@ -45,7 +45,7 @@ class User extends Component {
           progressbar: '65',
         },
         {
-          id: '4352761',
+          id: '0043854',
           food: 'Mushroom Rice',
           qty:'x2',
           time: '15:00',
@@ -53,12 +53,28 @@ class User extends Component {
           progressbar: '30',
         },
         {
-          id: '3627154',
+          id: '0043855',
           food: 'Zinger Burger',
           qty:'x3',
           time: '15:00',
           company: 'KFC',
           progressbar: '25',
+        },
+        {
+          id: '0043856',
+          food: 'Lobster Bisque with Puff Pastry',
+          qty:'x3',
+          time: '15:00',
+          company: 'Pizza Hut',
+          progressbar: '35',
+        },
+        {
+          id: '0043857',
+          food: 'Spaghetti Americana',
+          qty:'x4',
+          time: '15:15',
+          company: 'Pizza Hut',
+          progressbar: '15',
         },
 
       ]
@@ -109,9 +125,15 @@ class User extends Component {
                 <div className="user-div">
                   <div className="lineup">
                     <div>
-                      <input type="radio" value="Easter" name="district"/> Easter
-                      <input type="radio" value="Southern" name="district"/> Southern
-                      <input type="radio" value="North" name="district"/> North
+                      <input type="radio" value="Easter" name="district"/> Easter &emsp;
+                      <input type="radio" value="Southern" name="district"/> Southern &emsp;
+                      <input type="radio" value="North" name="district"/> North &emsp;
+                      <input type="radio" value="Sha Tin" name="district"/> Sha Tin &emsp;
+                      <input type="radio" value="Tai Po" name="district"/> Tai Po &emsp;
+                      <input type="radio" value="Tsuen Wan" name="district"/> Tsuen Wan &emsp;
+                      <input type="radio" value="Tuen Mun" name="district"/> Tuen Mun &emsp;
+                      <input type="radio" value="Kwun Tong" name="district"/> Kwun Tong &emsp;
+                      <input type="radio" value="Yuen Long" name="district"/> Yuen Long &emsp;
                     </div>
                   </div>
                   <div>
