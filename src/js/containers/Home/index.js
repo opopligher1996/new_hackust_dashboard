@@ -236,6 +236,36 @@ class Home extends Component {
                           key={'minibus-1'}
                           position={{lat: 22.294904 , lng: 114.173200}}
                         />
+                        <Marker
+                          className="icon"
+                          key={'minibus-1'}
+                          icon={{url: require('./photos/location.png')}}
+                          position={{lat: 22.299562 , lng: 114.175962}}
+                        />
+                        <Marker
+                          className="icon"
+                          key={'minibus-1'}
+                          icon={{url: require('./photos/location.png')}}
+                          position={{lat: 22.302862 , lng: 114.177262}}
+                        />
+                        <Marker
+                          className="icon"
+                          key={'minibus-1'}
+                          icon={{url: require('./photos/location.png')}}
+                          position={{lat: 22.301662 , lng: 114.179362}}
+                        />
+                        <Marker
+                          className="icon"
+                          key={'minibus-1'}
+                          icon={{url: require('./photos/location.png')}}
+                          position={{lat: 22.298162 , lng: 114.177662}}
+                        />
+                        <Marker
+                          className="icon"
+                          key={'minibus-1'}
+                          icon={{url: require('./photos/location.png')}}
+                          position={{lat: 22.295062 , lng: 114.173862}}
+                        />
                       </Map>
                     </div>
                   </div>
