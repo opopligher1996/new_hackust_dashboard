@@ -43,43 +43,11 @@ class User extends Component {
           time: '14:00',
           company: 'Pizza Hut',
           progressbar: '65',
-        },
-        {
-          id: '0043854',
-          food: 'Mushroom Rice',
-          qty:'x2',
-          time: '15:00',
-          company: 'KFC',
-          progressbar: '30',
-        },
-        {
-          id: '0043855',
-          food: 'Zinger Burger',
-          qty:'x3',
-          time: '15:00',
-          company: 'KFC',
-          progressbar: '25',
-        },
-        {
-          id: '0043856',
-          food: 'Lobster Bisque with Puff Pastry',
-          qty:'x3',
-          time: '15:00',
-          company: 'Pizza Hut',
-          progressbar: '35',
-        },
-        {
-          id: '0043857',
-          food: 'Spaghetti Americana',
-          qty:'x4',
-          time: '15:15',
-          company: 'Pizza Hut',
-          progressbar: '15',
-        },
+        }
 
       ]
     }
-  }  
+  }
   renderOrderRecords = () => {
     const {orders} = this.state
     return orders.map((order, index) =>
