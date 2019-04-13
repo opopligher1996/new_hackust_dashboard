@@ -214,56 +214,26 @@ class Home extends Component {
                         <Marker
                           className="icon"
                           key={'minibus-1'}
-                          position={{lat: 22.299536 , lng: 114.175937}}
-                        />
-                        <Marker
-                          className="icon"
-                          key={'minibus-1'}
-                          position={{lat: 22.302933 , lng: 114.177249}}
-                        />
-                        <Marker
-                          className="icon"
-                          key={'minibus-1'}
-                          position={{lat: 22.301657 , lng: 114.179564}}
-                        />
-                        <Marker
-                          className="icon"
-                          key={'minibus-1'}
-                          position={{lat: 22.298033 , lng: 114.177539}}
-                        />
-                        <Marker
-                          className="icon"
-                          key={'minibus-1'}
-                          position={{lat: 22.294904 , lng: 114.173200}}
-                        />
-                        <Marker
-                          className="icon"
-                          key={'minibus-1'}
-                          icon={{url: require('./photos/location.png')}}
                           position={{lat: 22.299562 , lng: 114.175962}}
                         />
                         <Marker
                           className="icon"
                           key={'minibus-1'}
-                          icon={{url: require('./photos/location.png')}}
                           position={{lat: 22.302862 , lng: 114.177262}}
                         />
                         <Marker
                           className="icon"
                           key={'minibus-1'}
-                          icon={{url: require('./photos/location.png')}}
                           position={{lat: 22.301662 , lng: 114.179362}}
                         />
                         <Marker
                           className="icon"
                           key={'minibus-1'}
-                          icon={{url: require('./photos/location.png')}}
                           position={{lat: 22.298162 , lng: 114.177662}}
                         />
                         <Marker
                           className="icon"
                           key={'minibus-1'}
-                          icon={{url: require('./photos/location.png')}}
                           position={{lat: 22.295062 , lng: 114.173862}}
                         />
                       </Map>
