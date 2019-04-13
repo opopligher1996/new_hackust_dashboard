@@ -14,6 +14,7 @@ import Title from '../../components/Title';
 import Card from '../../components/CardView';
 import FlowLayout from '../FlowLayout';
 import GoogleMapReact from 'google-map-react';
+import { FaHome, FaMap, FaUsers, FaBars } from 'react-icons/fa';
 import { Map, InfoWindow, Marker, GoogleApiWrapper, Polyline } from 'google-maps-react';
 // import ApolloTest from '../../components/ApolloTest';
 import Layout from '../Layout';
@@ -31,7 +32,8 @@ class Home extends Component {
           capacity: 90,
           eta: 15,
           place: 'UST',
-          time: '7:00'
+          time: '7:00',
+          percent: 90
         },
         {
           order_id: '0190304',
@@ -39,7 +41,8 @@ class Home extends Component {
           capacity: 90,
           eta: 15,
           place: 'Tin Shui Wai',
-          time: '7:00'
+          time: '7:00',
+          percent: 95
         },
         {
           order_id: '0190304',
@@ -47,7 +50,8 @@ class Home extends Component {
           capacity: 90,
           eta: 15,
           place: 'Tin Shui Wai',
-          time: '7:00'
+          time: '7:00',
+          percent: 85
         },
         {
           order_id: '0190304',
@@ -55,7 +59,8 @@ class Home extends Component {
           capacity: 90,
           eta: 15,
           place: 'Tin Shui Wai',
-          time: '7:30'
+          time: '7:30',
+          percent: 75
         },
         {
           order_id: '0190304',
@@ -63,7 +68,8 @@ class Home extends Component {
           capacity: 90,
           eta: 15,
           place: 'Tin Shui Wai',
-          time: '7:30'
+          time: '7:30',
+          percent: 80
         }
       ]
     }
@@ -145,8 +151,7 @@ class Home extends Component {
     return orders.map((order, index) =>
       <HackProgressBar
         key= {'order - '+index}
-        percent={80}
-        showInfo={true}
+        percent={order.percent}
         order_id={order.order_id}
         company_name={order.company_name}
         place={order.place}
@@ -161,23 +166,22 @@ class Home extends Component {
     return (
       <div>
         <Row>
-          <Col md={3} className="sidebar">
+          <Col md={2} className="sidebar">
             <div className="icon-div">
-              <img className="icon" src={require('./photos/hackust.png')}/>
+
             </div>
             <div className="sidebar-manu">
              <ul>
-               <li><Link to="/"><h6> Home</h6></Link></li>
-               <li><h6> Map</h6></li>
-               <li><Link to="/user"><h6>User</h6></Link></li>
-               <li><h6>Report</h6></li>
+               <li><Link to="/"><h3><FaHome/> Home</h3></Link></li>
+               <li><Link to="/heatmap"><h3><FaMap/> Map</h3></Link></li>
+               <li><Link to="/user"><h3><FaUsers/>User</h3></Link></li>
              </ul>
             </div>
           </Col>
-          <Col md={21}>
+          <Col md={22}>
             <Row className="header">
               <div className="dashboard-name">
-                <h4>Dashboard</h4>
+                <h2>Dashboard</h2>
               </div>
             </Row>
             <Row>

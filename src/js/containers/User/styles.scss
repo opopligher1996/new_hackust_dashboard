@@ -1,7 +1,7 @@
 // sidebar
 .sidebar{
   border-right: 1px solid #e6ecf5;
-  min-height: 100vh;
+  min-height: 200vh;
 
   img {
     width:100%;
@@ -42,6 +42,7 @@
 
 .main{
   background-color: #f9fafb;
+  height: 190vh;
 }
 
 .guate-outter-div{
@@ -169,4 +170,15 @@ h7 {
 
 .paddingleft{
   padding-left:10px
+}
+
+.user-outer-div{
+  padding: 20px;
+  width: 100%;
+  height: 80vh;
+  .user-div{
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, .0625) !important;
+
+  }
 }

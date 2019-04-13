@@ -10,6 +10,7 @@ import BogDropdown from '../../components/BogDropdown';
 import ThemeButton from '../../components/ThemeButton';
 import ProgressBar from '../../components/ProgressBar';
 import FoodOrder from '../../components/FoodOrder';
+import { FaHome, FaMap, FaUsers, FaBars } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import {Row, Col} from 'antd';
 
@@ -85,42 +86,38 @@ class User extends Component {
     return (
       <div>
         <Row>
-          <Col md={3} className="sidebar">
+          <Col md={2} className="sidebar">
             <div className="icon-div">
-              icon
+
             </div>
             <div className="sidebar-manu">
              <ul>
-               <li><h6> Home</h6></li>
-               <li><Link to="/"><h6> Map</h6></Link></li>
-               <li><h6>User</h6></li>
+               <li><Link to="/"><h3><FaHome/> Home</h3></Link></li>
+               <li><Link to="/heatmap"><h3><FaMap/> Map</h3></Link></li>
+               <li><Link to="/user"><h3><FaUsers/>User</h3></Link></li>
              </ul>
             </div>
           </Col>
-          <Col md={21}>
+          <Col md={22}>
             <Row className="header">
               <div className="dashboard-name">
-                <h4>Dashboard</h4>
+                <h2>Dashboard</h2>
               </div>
             </Row>
-            <Row className="header">
-              <div className="dashboard-name">
-                <h1>User Order</h1>
-              </div>
-            </Row>
-            <Row className="header">
-              <div className="lineup">
-                <div onChange={this.setGender.bind(this)}>
-                  <input type="radio" value="Easter" name="district"/> Easter
-                  <input type="radio" value="Southern" name="district"/> Southern
-                  <input type="radio" value="North" name="district"/> North
+            <Row className="main">
+              <div className="user-outer-div">
+                <div className="user-div">
+                  <div className="lineup">
+                    <div onChange={this.setGender.bind(this)}>
+                      <input type="radio" value="Easter" name="district"/> Easter
+                      <input type="radio" value="Southern" name="district"/> Southern
+                      <input type="radio" value="North" name="district"/> North
+                    </div>
+                  </div>
+                  <div>
+                    {this.renderOrderRecords()}
+                  </div>
                 </div>
-              </div>
-            </Row>
-
-            <Row>
-              <div>
-              {this.renderOrderRecords()}
               </div>
             </Row>
           </Col>

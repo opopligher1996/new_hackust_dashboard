@@ -10,6 +10,7 @@ import BogDropdown from '../../components/BogDropdown';
 import ThemeButton from '../../components/ThemeButton';
 import ProgressBar from '../../components/ProgressBar';
 import FoodOrder from '../../components/FoodOrder';
+import { FaHome, FaMap, FaUsers, FaBars } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import {Row, Col} from 'antd';
 import { Polygon, Map, InfoWindow, Marker, GoogleApiWrapper, Polyline } from 'google-maps-react';
@@ -127,22 +128,22 @@ class HeatMap extends Component {
     return (
       <div>
         <Row>
-          <Col md={3} className="sidebar">
+          <Col md={2} className="sidebar">
             <div className="icon-div">
-              icon
+
             </div>
             <div className="sidebar-manu">
              <ul>
-               <li><h6> Home</h6></li>
-               <li><Link to="/"><h6> Map</h6></Link></li>
-               <li><h6>User</h6></li>
+               <li><Link to="/"><h3><FaHome/> Home</h3></Link></li>
+               <li><Link to="/heatmap"><h3><FaMap/> Map</h3></Link></li>
+               <li><Link to="/user"><h3><FaUsers/>User</h3></Link></li>
              </ul>
             </div>
           </Col>
-          <Col md={21}>
+          <Col md={22}>
             <Row className="header">
               <div className="dashboard-name">
-                <h4>Dashboard</h4>
+                <h2>Dashboard</h2>
               </div>
             </Row>
             <Row className="main">
