@@ -27,37 +27,7 @@ class Navbar extends Component {
   render() {
     const routesOnNav = routes.filter(item => item.showOnNav);
     return (
-      <div className={`navbar
-        ${this.props.location.pathname === '/' && 'fixed'}
-        `}>
-        <div className='content'>
-          <div className='logo'>
-            <Icon type="aliwangwang" theme="outlined" />
-            <span>Be Our Guest</span>
-          </div>
-          <div className='search'>
-            <LocationSearch
-              onLocationChange={this.onLocationChange}
-              search={true}
-              placeholder='Try Hong Kong'
-              prefixIconName='search'
-              iconTheme='outlined'
-            />
-          </div>
-        </div>
-
-        <div className='menu'>
-          {routesOnNav.map((route, i) =>
-            <div key={'menu-'+i} className='link-container'>
-              <Link key={'link-'+i} to={route.path}>{route.name}</Link>
-            </div>
-          )}
-          <Link to="login">
-            <ThemeButton
-              text='Login'
-            />
-          </Link>
-        </div>
+      <div>
       </div>
     )
   }

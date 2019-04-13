@@ -118,11 +118,25 @@ const ActivityDetail = Loadable({
   webpack: () => [require.resolveWeak('./containers/ActivityDetail')],
 });
 
+const User = Loadable({
+  loader: () => import(/* webpackChunkName: "Experience" */ './containers/User'),
+  loading: Loading,
+  modules: ['./containers/User'],
+  webpack: () => [require.resolveWeak('./containers/User')],
+});
+
 export default [
     {
         path: "/",
         name: 'Home',
         component: Home,
+        exact: true,
+        showOnNav: true
+    },
+    {
+        path: "/user",
+        name: 'User',
+        component: User,
         exact: true,
         showOnNav: true
     },
