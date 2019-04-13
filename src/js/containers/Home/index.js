@@ -163,7 +163,7 @@ class Home extends Component {
         <Row>
           <Col md={3} className="sidebar">
             <div className="icon-div">
-              icon
+              <img className="icon" src={require('./photos/hackust.png')}/>
             </div>
             <div className="sidebar-manu">
              <ul>

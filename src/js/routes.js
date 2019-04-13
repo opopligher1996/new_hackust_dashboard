@@ -125,6 +125,13 @@ const User = Loadable({
   webpack: () => [require.resolveWeak('./containers/User')],
 });
 
+const HeatMap = Loadable({
+  loader: () => import(/* webpackChunkName: "Experience" */ './containers/HeatMap'),
+  loading: Loading,
+  modules: ['./containers/HeatMap'],
+  webpack: () => [require.resolveWeak('./containers/HeatMap')],
+});
+
 export default [
     {
         path: "/",
@@ -137,6 +144,13 @@ export default [
         path: "/user",
         name: 'User',
         component: User,
+        exact: true,
+        showOnNav: true
+    },
+    {
+        path: "/heatmap",
+        name: 'HeatMap',
+        component: HeatMap,
         exact: true,
         showOnNav: true
     },
