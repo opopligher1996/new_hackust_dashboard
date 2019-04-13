@@ -74,6 +74,12 @@ class HeatMap extends Component {
          {lat: 22.295192, lng: 114.174948},
          {lat: 22.297298, lng: 114.175526},
          {lat: 22.298035, lng: 114.168868}
+       ],
+       [
+         {lat: 22.293942,lng: 114.169086},
+         {lat: 22.293962, lng: 114.175012},
+         {lat: 22.299080, lng: 114.180277},
+         {lat: 22.299812, lng: 114.168481}
        ]
       ],
 
@@ -91,7 +97,13 @@ class HeatMap extends Component {
           {lat: 22.296128, lng: 114.175309},
           {lat: 22.297298, lng: 114.175490},
           {lat: 22.297933, lng: 114.168770}
-        ]
+        ],
+        [
+         {lat: 22.303095, lng: 114.168319},
+         {lat: 22.302810, lng: 114.177001},
+         {lat: 22.299080, lng: 114.180270},
+         {lat: 22.299812, lng: 114.168461}
+       ]
       ],
 
       Stand_By_Three:[
@@ -113,6 +125,18 @@ class HeatMap extends Component {
           {lat: 22.301568, lng: 114.191397},
           {lat: 22.299403, lng: 114.180746},
           {lat: 22.302961, lng: 114.177344}
+        ],
+        [
+          {lat: 22.303005, lng: 114.170619},
+          {lat: 22.305226, lng: 114.169045},
+          {lat: 22.304365, lng: 114.171597},
+          {lat: 22.307089, lng: 114.175567},
+          {lat: 22.307025, lng: 114.179086},
+          {lat: 22.307569, lng: 114.181032},
+          {lat: 22.304779, lng: 114.184459},
+          {lat: 22.299534, lng: 114.185066},
+          {lat: 22.298653, lng: 114.180746},
+          {lat: 22.302791, lng: 114.177144}
         ]
       ],
 
@@ -132,6 +156,13 @@ class HeatMap extends Component {
           {lat: 22.306889, lng: 114.174567},
           {lat: 22.308668, lng: 114.171230},
           {lat: 22.309128, lng: 114.167716}
+        ],
+        [
+          {lat: 22.305226, lng: 114.169045},
+          {lat: 22.304365, lng: 114.171597},
+          {lat: 22.306889, lng: 114.175367},
+          {lat: 22.309568, lng: 114.176530},
+          {lat: 22.310028, lng: 114.168316}
         ]
       ],
 
@@ -153,6 +184,14 @@ class HeatMap extends Component {
           {lat: 22.309077, lng: 114.167855},
           {lat: 22.305929, lng: 114.166998},
           {lat: 22.303140, lng: 114.167994}
+        ],
+        [
+          {lat: 22.303386, lng: 114.160092},
+          {lat: 22.309016, lng: 114.161027},
+          {lat: 22.309729, lng: 114.165644},
+          {lat: 22.310477, lng: 114.168155},
+          {lat: 22.305229, lng: 114.169098},
+          {lat: 22.303040, lng: 114.170494}
         ]
       ],
 
@@ -166,6 +205,19 @@ class HeatMap extends Component {
 
   changeArea(){
     console.log('changeArea')
+    var {Stand_By_One, Stand_By_Two, Stand_By_Three, Stand_By_Four, Stand_By_Five, Stand_By_i} = this.state
+    Stand_By_i ++
+    if(Stand_By_i == 3){
+      Stand_By_i = 0
+    }
+    this.setState({
+      Stand_By_i: Stand_By_i,
+      Area_One_Coords: Stand_By_One[Stand_By_i],
+      Area_Two_Coords: Stand_By_Two[Stand_By_i],
+      Area_Three_Coords: Stand_By_Three[Stand_By_i],
+      Area_Four_Coords: Stand_By_Four[Stand_By_i],
+      Area_Five_Coords: Stand_By_Five[Stand_By_i]
+    })
   }
 
   renderAreaOne(){
