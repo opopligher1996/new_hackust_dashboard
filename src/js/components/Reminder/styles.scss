@@ -1,0 +1,13 @@
+@import "../../../styles/variables";
+
+.reminder {
+  display: flex;
+  flex-direction: row;
+  color: $secondary-gray;
+  font-weight: 300;
+
+  .anticon {
+    margin-top: 4px;
+    padding-right: 8px;
+  }
+}

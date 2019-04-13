@@ -1,0 +1,24 @@
+@import "../../../styles/variables";
+
+.location-selector-container {
+  margin: 15px 0;
+
+  .location-selector {
+    width: 100%;
+    height: 300px;
+    margin-top: -4px;
+
+    .map-container {
+      width: 100%;
+      height: 300px;
+    }
+
+    & > div {
+      border-radius: 0 0 5px 5px;
+    }
+
+    img {
+      width: 32px;
+    }
+  }
+}

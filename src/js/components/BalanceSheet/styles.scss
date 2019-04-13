@@ -1,0 +1,24 @@
+@import "../../../styles/variables";
+
+.balance-sheet-container {
+  .balance-item {
+    font-size: 18px;
+    font-weight: 300;
+    color: $primary-gray;
+    margin: 13px 0;
+
+    .highlight-item {
+      font-weight: bold;
+    }
+  }
+
+  .balance-sum {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .amount {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

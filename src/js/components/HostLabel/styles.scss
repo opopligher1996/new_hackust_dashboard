@@ -1,0 +1,35 @@
+.host-btn {
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  width: 86px;
+  height: 20px;
+  font-family: AirbnbCerealApp;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+
+    &.gold-hold {
+    background-color: #f8c81c;
+    }
+
+    &.silver-hold {
+    background-color: #a5a5a5;
+    }
+
+    &.bronze-hold {
+    background-color: #8b572a;
+    }
+
+    &.dark-grass-green {
+    background-color: #417505;
+    }
+
+    &.label-padding{
+    padding-left: 3px
+    }
+}

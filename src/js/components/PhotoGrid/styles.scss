@@ -1,0 +1,36 @@
+@import '../../utils/theme';
+
+.photo-grid-item {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  border: 1px solid $light-gray;
+  margin: 12px 0;
+  cursor: pointer;
+
+  &.photo-container {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &.photo-upload-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    span {
+      color: $primary-gray;
+      padding-bottom: 12px;
+      font-size: 18px;
+    }
+
+    .anticon {
+      color: $primary-color;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+
+}

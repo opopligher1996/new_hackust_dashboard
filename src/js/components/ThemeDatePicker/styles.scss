@@ -1,0 +1,20 @@
+@import "../../utils/theme.scss";
+.theme-datepicker {
+
+  .ant-calendar-picker-clear, .ant-calendar-picker-icon {
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    color: $primary-gray;
+  }
+
+  .ant-calendar-picker-input {
+    height: 51px;
+  }
+}
+
+.ant-calendar-input-wrap {
+  height: 51px;
+  display: flex;
+  align-items: center;
+}
