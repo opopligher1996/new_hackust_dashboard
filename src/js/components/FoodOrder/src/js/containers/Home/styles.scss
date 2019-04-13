@@ -1,0 +1,45 @@
+@import "../../../styles/variables";
+.action-box-container {
+  position: absolute;
+  top: 150px;
+  left: 5%;
+  width: 100%;
+}
+
+.padding-row{
+  padding-top: 30px;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+.description {
+  padding-top: 1vh;
+  min-width: 320px;
+  font-size: 18px;
+  color: $primary-gray;
+}
+
+.more-activity{
+  font-style: AirbnbCerealApp;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffa200;
+  font-weight:bold;
+}
+
+.dish-card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 90%;
+  height: 300px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dish-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}

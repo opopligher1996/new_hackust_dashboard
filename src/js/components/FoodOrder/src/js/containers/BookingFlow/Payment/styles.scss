@@ -1,0 +1,57 @@
+.title-div{
+  padding-top: 30px
+}
+
+.radio-description{
+  padding-left: 9px;
+  width: 49px;
+  height: 31px;
+  font-style: AirbnbCerealApp;
+  font-size: 24px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--greyish-brown);
+  .radio-description-bold{
+    font-weight: bold;
+  };
+}
+
+.radio-description-small{
+  font-size: 18px;
+}
+
+.radio-description-right{
+  left: 550px;
+  position: absolute;
+}
+
+.total-div{
+  width: 234px;
+  height: 23px;
+  font-style: AirbnbCerealApp;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffa200;
+}
+
+.total-amount{
+  height: 23px;
+  font-style: AirbnbCerealApp;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--brownish-grey);
+}
+
+.button-padding{
+  padding-left: 25px
+}

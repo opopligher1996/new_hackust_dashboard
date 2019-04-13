@@ -17,8 +17,70 @@ class User extends Component {
 
   constructor(props) {
     super(props);
+    this.state = {
+      orders : [
+        {
+          id: '1234567',
+          food: 'Seafood Rice Doria',
+          qty:'x4',
+          time: '11:00',
+          company: 'Pizza Hut',
+          progressbar: '20',
+        },
+        {
+          id: '7654321',
+          food: 'Popcorn Crispy Chicken',
+          qty:'x3',
+          time: '12:00',
+          company: 'KFC',
+          progressbar: '88',
+        },
+        {
+          id: '1234568',
+          food: 'Seafood Supreme',
+          qty:'x5',
+          time: '14:00',
+          company: 'Pizza Hut',
+          progressbar: '65',
+        },
+        {
+          id: '4352761',
+          food: 'Mushroom Rice',
+          qty:'x2',
+          time: '15:00',
+          company: 'KFC',
+          progressbar: '30',
+        },
+        {
+          id: '3627154',
+          food: 'Zinger Burger',
+          qty:'x3',
+          time: '15:00',
+          company: 'KFC',
+          progressbar: '25',
+        },
+
+      ]
+    }
   }
 
+  renderOrderRecords = () => {
+    const {orders} = this.state
+    return orders.map((order, index) =>
+      <FoodOrder
+        id= {order.id}
+        food={order.food}
+        qty={order.qty}
+        time={order.time}
+        company={order.company}
+        progressbar={order.progressbar}
+      />
+    )
+  }
+
+  setGender(event) {
+    console.log(event.target.value);
+  }
   render() {
     return (
       <div>
@@ -48,32 +110,18 @@ class User extends Component {
             </Row>
             <Row className="header">
               <div className="lineup">
-                <ul>
-                  <li><h6>Eastern</h6></li>
-                  <li><h6>Southern</h6></li>
-                  <li><h6>North</h6></li>
-                </ul>
+                <div onChange={this.setGender.bind(this)}>
+                  <input type="radio" value="Easter" name="district"/> Easter
+                  <input type="radio" value="Southern" name="district"/> Southern
+                  <input type="radio" value="North" name="district"/> North
+                </div>
               </div>
             </Row>
 
-            <Row className="padding">
-              <FoodOrder
-              food={"Chicken"}
-              time={"12:00"}
-              company={"KFC"}
-              progressbar={"88"}
-              >
-              </FoodOrder>
-            </Row>
-
-            <Row className="padding">
-              <FoodOrder
-              food={"Pizza"}
-              time={"11:00"}
-              company={"Pizza Hut"}
-              progressbar={"55"}
-              >
-              </FoodOrder>
+            <Row>
+              <div>
+              {this.renderOrderRecords()}
+              </div>
             </Row>
           </Col>
         </Row>

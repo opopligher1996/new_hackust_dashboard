@@ -1,0 +1,74 @@
+@import '../../utils/theme';
+.ant-input-wrapper.ant-input-group {
+  .ant-input-group-addon {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    color: #a5a5a5;
+
+    &:first-child {
+      border-right-width: 0;
+    }
+
+    &:last-child {
+      border-left-width: 0;
+    }
+
+  }
+}
+
+.bog-input {
+
+  input {
+    height: 51px;
+    font-size: 18px;
+    color: #6f6f6f;
+    padding-left: 15px;
+  }
+
+  &.search {
+    input {
+      height: 48px;
+    }
+  }
+
+  &:hover, &:focus {
+    border-color: $primary-color;
+  }
+
+  &.input-no-left-border {
+    input {
+      border-left-width: 0;
+    }
+  }
+
+  &.input-no-right-border {
+    input {
+      border-right-width: 0 !important;
+    }
+  }
+
+  &.disable-point-event {
+    pointer-events: none;
+  }
+
+  .ant-input-prefix, .ant-input-suffix {
+    color: #a5a5a5;
+    font-weight: bold;
+  }
+
+  .ant-input-prefix, .ant-input-suffix {
+    font-size: 18px;
+  }
+
+  &.ant-input-affix-wrapper {
+    .ant-input:not(:last-child) {
+      padding-right: 40px;
+    }
+    .ant-input:not(:first-child) {
+      padding-left: 40px;
+    }
+
+  }
+
+}

@@ -1,0 +1,88 @@
+.activity-page{
+  height: 2500px
+}
+
+.activity-photo-div{
+  height: 20%
+}
+.activity-photo{
+  width: 100%;
+  height: 100%;
+}
+
+.padding-row{
+  padding-top: 30px;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+.padding-div{
+  padding-top: 24px;
+}
+
+.padding-div-13{
+  padding-top: 13px;
+}
+
+.name{
+  font-family: AirbnbCerealApp;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--greyish-brown);
+}
+
+.intro{
+  font-family: AirbnbCerealApp;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--brownish-grey);
+  padding-right: 18px;
+}
+
+.host-label{
+  padding-left: 14px
+}
+
+.comment{
+  border-bottom: 1px solid #dedede;
+}
+
+.content{
+  font-family: AirbnbCerealApp;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #6f6f6f
+}
+
+.meal-icon{
+  width: 17px;
+  height: 17px;
+}
+
+.padding-col{
+  padding-right: 3vw;
+}
+
+.float-right{
+  float:right;
+}
+
+.tag-padding{
+  padding-left: 11px
+}
+
+.image{
+  width: 100%
+}

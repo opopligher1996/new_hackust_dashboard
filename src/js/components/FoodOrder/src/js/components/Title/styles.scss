@@ -1,0 +1,12 @@
+@import '../../utils/theme';
+.title {
+  .divider {
+    margin-top: 12px;
+    border-bottom: 3px solid $primary-color;
+    width: 50px;
+  }
+
+  .text {
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,16 @@
+.listing-basics-container {
+  .ant-radio-wrapper {
+    line-height: 1.5;
+    font-size: 16px;
+    margin-bottom: 12px;
+    padding-left: 4px;
+
+    .ant-radio-inner {
+      transform: scale(1.5);
+    }
+  }
+
+  .location-selector-container {
+    width: 100%;
+  }
+}

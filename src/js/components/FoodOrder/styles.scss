@@ -1,8 +1,13 @@
 .boxsize{
   border-radius: 5px 5px 5px 5px;
   padding-left: 10px;
-  height: 100px;
+  height: 140px;
   color: #252525;
+  padding-top:20px;
+  padding-left:20px;
+  margin:20px;
+  border-style:outset;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .food{
@@ -19,5 +24,10 @@
 }
 
 .company{
+  text-align: center;
+  font-size: 40px;
+}
+
+.center{
   text-align: center;
 }

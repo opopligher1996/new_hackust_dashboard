@@ -1,0 +1,17 @@
+@import '../../../utils/theme';
+
+.listing-experience-container {
+  .ant-row {
+    margin: 13px 0;
+  }
+
+  p {
+    margin-top: 24px;
+    font-size: 16px;
+    color: $primary-gray;
+  }
+
+  .back-btn {
+    margin-right: 24px;
+  }
+}

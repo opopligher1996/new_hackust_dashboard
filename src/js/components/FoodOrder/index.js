@@ -7,18 +7,29 @@ import Rating from '../../components/Rating';
 import TagView from '../../components/TagView';
 import {Row, Col} from 'antd';
 import ProgressBar from '../../components/ProgressBar';
+import BogAvatar from '../../components/BogAvatar';
 import './styles.scss';
+
+
 
 class FoodOrder extends Component {
   render(){
-    const { food, time, company, progressbar } = this.props;
+    const { id, food, qty, time, company, progressbar } = this.props;
     return (
       <Row className="boxsize">
-        <Col md={11}>
+        <Col md={4}>
+          <h6>{id}</h6>
+        </Col>
+        <Col md={7}>
         <div className="food">
           <h6>Food order</h6>
           <div>
+          <Col md={7}>
             {food}
+          </Col>
+          <Col md={7}>
+            {qty}
+          </Col>
           </div>
         </div>
         </Col>
@@ -36,7 +47,10 @@ class FoodOrder extends Component {
           </Col>
           <Col md={8} >
             <div className="borderstyle">
-              <h6>company icon</h6>
+            <BogAvatar
+              src={require('./photos/'+company+'.png')}
+              size='medium'
+            />
             </div>
           </Col>
           <Col md={8} >
