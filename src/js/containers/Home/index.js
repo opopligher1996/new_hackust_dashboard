@@ -245,7 +245,7 @@ class Home extends Component {
                     <div className="rigth-inner-div">
                       <div className="order-status-div">
                         <h4>Store: Tsim Sha Tsui</h4>
-                        <h4>Dirver No.: 012</h4>
+                        <h4>Driver No.: 012</h4>
                         <h4>Order Status</h4>
                       </div>
                       {this.renderOrderRecords()}
