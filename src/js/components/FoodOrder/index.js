@@ -14,7 +14,7 @@ import './styles.scss';
 
 class FoodOrder extends Component {
   render(){
-    const { id, food, qty, time, company, progressbar } = this.props;
+    const { id, food, qty, time, company, progressbar, status } = this.props;
     return (
       <Row className="boxsize">
         <Col md={4}>
@@ -64,7 +64,7 @@ class FoodOrder extends Component {
               percent={progressbar}
               showInfo={true}
             />
-            <h6>progress bar</h6>
+            <h6>{status}</h6>
           </Row>
         </Col>
       </Row>

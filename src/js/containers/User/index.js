@@ -26,7 +26,8 @@ class User extends Component {
           qty:'x4',
           time: '11:00',
           company: 'Pizza Hut',
-          progressbar: '20',
+          progressbar: '100',
+          status:'Finished'
         },
         {
           id: '0043852',
@@ -35,6 +36,7 @@ class User extends Component {
           time: '12:00',
           company: 'KFC',
           progressbar: '88',
+          status:'Almost done'
         },
         {
           id: '0043853',
@@ -43,6 +45,7 @@ class User extends Component {
           time: '14:00',
           company: 'Pizza Hut',
           progressbar: '65',
+          status:'Preparing'
         }
 
       ]
@@ -58,6 +61,7 @@ class User extends Component {
         time={order.time}
         company={order.company}
         progressbar={order.progressbar}
+        status={order.status}
       />
     )
   }
